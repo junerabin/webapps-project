@@ -64,7 +64,6 @@ header {
 .nav ul li a {
     color: #b1adb3;
     text-decoration: none;
-    /*-webkit-transition: color .4s;*/
     transition: color .5s;
 }
 
@@ -145,6 +144,14 @@ p {
     font-size: 16px;
 }
 
+.contact input::placeholder{
+    color: #cccccc;
+}
+
+.contact textarea::placeholder {
+    color: #cccccc;
+}
+
 .contact textarea {
     width: 920px;
     border: 1px solid #cccccc;
@@ -152,6 +159,8 @@ p {
     padding: 16px;
     font-size: 16px;
 }
+
+
 
 .contact input[type="submit"] {
     width: auto;
@@ -173,6 +182,7 @@ p {
     width: 250px;
     height: 200px;
     transition: transform .2s ease-out;
+   
 }
 
 .portfolio-item:hover {
@@ -181,11 +191,12 @@ p {
 
 .item-name {
     position: relative;
-    top: -95px;
+    top: -10px;
     text-align: center;
     background-color: #4aaaa5;
-    padding: 1em;
+    padding: 16px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -194,9 +205,9 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 1em;
+    padding: 16px;
     text-align: center;
-    font-size: 0.5em;
+    font-size: 8px;
     color: #cccccc;
     background-color: #666666;
     border-top: 6px solid #4aaaa5;
