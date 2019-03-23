@@ -88,6 +88,7 @@ header {
 .content {
     width: 960px;
     margin: 0 auto 6em auto;
+    align-self: center;
 }
 
 .main {
@@ -125,6 +126,38 @@ img.facePhoto {
     width: 150px;
     height: 200px;
 }
+
+
+/* Contact Page */
+.contact {
+    width: 540px;
+}
+
+.contact label {
+    display: block;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 920px;
+    border: 1px solid #cccccc;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    font-size: .9em;
+}
+
+.contact input[type="submit"] {
+    width: auto;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+}
+
+
+
 
 footer {
     position: fixed;
