@@ -20,9 +20,6 @@ header {
     height: auto;
     border-bottom: 1px solid #cccccc;
     background-color: #ffffff;
-    margin-top: -10px;
-    margin-left: -10px;
-    /*margin-right: -10px;*/
 }
 
 .container {
@@ -41,34 +38,34 @@ header {
     display: inline-block;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: 2em;
-    letter-spacing: 0.04em;
+    font-size: 35px;
+    letter-spacing: 0.03em;
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 1em;
+    padding: 30px;
     width: auto;
 }
 
 .nav {
+    display: inline-block;
+    vertical-align: middle;
     width: 49%;
     text-align: right;
     color: #b1adb3;
     font-weight: normal;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .nav ul li {
     display: inline-block;
-    padding-left: 1em;
-    margin-left: 1em;
+    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .nav ul li a {
     color: #b1adb3;
     text-decoration: none;
-    -webkit-transition: color .4s;
-    transition: color .4s;
+    /*-webkit-transition: color .4s;*/
+    transition: color .5s;
 }
 
 .nav ul li a:hover {
@@ -80,14 +77,14 @@ header {
 }
 
 .nav ul li+li {
-    border-left: 1px solid #cccccc;
+    border-left: 2px solid #cccccc;
 }
 
 
 /* Main Content Area */
 .content {
     width: 960px;
-    margin: 0 auto 6em auto;
+    margin: auto;
     align-self: center;
 }
 
@@ -95,35 +92,36 @@ header {
     display: inline-block;
     width: 960px;
     margin: 40px 0;
-    padding: 40px;
+    padding: 50px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 35px;
     font-weight: bold;
-    padding-bottom: 1em;
-    margin-bottom: 0.8em;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom: 2px solid #dddddd;
 }
 
 .ty {
-    font-size: 1.5em;
+    font-size: 25px;
     font-weight: bold;
     text-align: right;
+    margin-right: 40px;
 }
 
-.main p {
+p {
     font-size: 18px;
-    line-height: 1.5em;
-    margin-bottom: 2em;
+    line-height: 28px;
+    margin-bottom: 16px;
 }
 
-img.facePhoto {
+.facePhoto {
     float: left;
-    padding: 0 1em 1em 0;
-    width: 150px;
+    padding: 0 20px 20px 0;
+    width: 170px;
     height: 200px;
 }
 
@@ -135,16 +133,24 @@ img.facePhoto {
 
 .contact label {
     display: block;
-    padding-bottom: .5em;
+    padding-bottom: 8px;
     font-weight: bold;
 }
 
-.contact input, .contact textarea {
+.contact input {
     width: 920px;
     border: 1px solid #cccccc;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    font-size: .9em;
+    margin-bottom: 24px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    width: 920px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding: 16px;
+    font-size: 16px;
 }
 
 .contact input[type="submit"] {
@@ -152,11 +158,35 @@ img.facePhoto {
     background-color: #4aaaa5;
     color: #ffffff;
     border: none;
-    padding: 1em 2em;
-    font-size: 1em;
+    padding: 10px 30px;
+    font-size: 16px;
 }
 
+/* Portfolio Page */
+.portfolio {
+    margin: 50px 100px 50px 100px;
+}
 
+.portfolio-item {
+    display: inline-flex;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    transition: transform .2s ease-out;
+}
+
+.portfolio-item:hover {
+    transform: rotate(-5deg) scale(1.1, 1.1);
+}
+
+.item-name {
+    position: relative;
+    top: -95px;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding: 1em;
+    color: #ffffff;
+}
 
 
 footer {
