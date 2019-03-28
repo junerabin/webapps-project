@@ -2,81 +2,139 @@
 <html lang="en">
 
 <head>
+    <title>Contact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Basic-Portfolio/assets/css/reset.css">
+    <!-- JS -->
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Basic-Portfolio/assets/css/style.css">
-    <title>Contact</title>
+    <link rel="stylesheet" href="../Basic-Portfolio/assets/css/reset.css">
 </head>
 
 <body>
-
-    <header>
-        <div class="container">
-            <div class="name">
-                <div class="logo">Maria Rabin</div>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="#" class="active">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            </nav>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Maria Rabin</a>
         </div>
-    </header>
 
-    <div class="content">
-        <div class="main">
-            <h1 class="page-title">Portfolio</h1>
-            <ul class="portfolio">
-
-                <li class="portfolio-item">
-                    <a href="#">
-                        <img src="./assets/images/KTV.png" height="150" width="150">
-                        <h2 class="item-name">Karaoke</h2>
-                    </a>
-
-                <li class="portfolio-item">
-                    <a href="#">
-                        <img src="./assets/images/Beach.png" height="150" width="150">
-                        <h2 class="item-name">Beach</h2>
-                    </a>
-
-                <li class="portfolio-item">
-                    <a href="#">
-                        <img src="./assets/images/Concerts.png" height="150" width="150">
-                        <h2 class="item-name">Concerts</h2>
-                    </a>
-
-                <li class="portfolio-item">
-                    <a href="#">
-                        <img src="./assets/images/Travel.png" height="150" width="150">
-                        <h2 class="item-name">Traveling</h2>
-                    </a>
-                <li class="portfolio-item">
-                    <a href="#">
-                        <img src="./assets/images/Events.png" height="150" width="150">
-                        <h2 class="item-name">Events Planning</h2>
-                    </a>
-                </li>
-
-                <li class="portfolio-item">
-                    <a href="#">
-                        <img src="./assets/images/Hugs.png" height="150" width="150">
-                        <h2 class="item-name">Warm Hugs</h2>
-                    </a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">About</a></li>
+                <li class="active"><a href="#">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
-    <footer>
-        <br>
-        <br>
-        Copyright &copy;
-    </footer>
+<div class="container">
+    <!-- Main content -->
+
+    <div class="row">
+        <div class="main col-md-8">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 class="page-title">Projects</h1>
+                </div>
+            </div>
+
+            <div class="row project">
+                <div class="col-sm-8 project-thumb">
+                    <a href="#">
+                        <img src="./assets/images/KTV-alt.png" class="img-responsive bottom">
+                        <img src="./assets/images/KTV.png" class="img-responsive top" alt="Portfolio thumbnail">
+                    </a>
+                </div> <!-- .project-thumb -->
+                <div class="col-sm-8 project-caption">
+                    <h3>Hangman</h3>
+                    <p class="description">Singing my heart's out loud.</p>
+                </div> <!-- .project-caption -->
+            </div> <!-- .project -->
+
+            <div class="row project">
+                <div class="col-sm-8 project-thumb">
+                    <a href="#">
+                        <img src="./assets/images/Beach-alt.png" class="img-responsive bottom" alt="Portfolio thumbnail">
+                        <img src="./assets/images/Beach.png" class="img-responsive top" alt="Portfolio thumbnail">
+                    </a>
+                </div> <!-- .project-thumb -->
+                <div class="col-sm-8 project-caption">
+                    <h3>RPG Game</h3>
+                    <p class="description">Hanging in the beach without my beach body</p>
+                </div> <!-- .project-caption -->
+            </div> <!-- .project -->
+
+            <div class="row project">
+                <div class="col-sm-8 project-thumb">
+                    <a href="#">
+                        <img src="./assets/images/KTV-alt.png" class="img-responsive bottom">
+                        <img src="./assets/images/KTV.png" class="img-responsive top">
+                    </a>
+                </div> <!-- .project-thumb -->
+                <div class="col-sm-8 project-caption">
+                    <h3>Trivia Game</h3>
+                    <p class="description">Singing til' the rain falls</p>
+                </div> <!-- .project-caption -->
+            </div> <!-- .project -->
+
+            <div class="row project">
+                <div class="col-sm-8 project-thumb">
+                    <a href="#">
+                        <img src="./assets/images/Beach-alt.png" class="img-responsive bottom" alt="Portfolio thumbnail">
+                        <img src="./assets/images/Beach.png" class="img-responsive top" alt="Portfolio thumbnail">
+                    </a>
+                </div> <!-- .project-thumb -->
+                <div class="col-sm-8 project-caption">
+                    <h3>Reuters Info Widget</h3>
+                    <p class="description">No beach body since I am too lazy to exercise</p>
+                </div> <!-- .project-caption -->
+            </div> <!-- .project -->
+
+            <div class="row project">
+                <div class="col-sm-8 project-thumb">
+                    <a href="#">
+                        <img src="./assets/images/Events-alt.png" class="img-responsive bottom" alt="Portfolio thumbnail">
+                        <img src="./assets/images/Events.png" class="img-responsive top" alt="Portfolio thumbnail">
+                    </a>
+                </div> <!-- .project-thumb -->
+                <div class="col-sm-8 project-caption">
+                    <h3>Rock, Paper, Scissors</h3>
+                    <p class="description">Planning events but havent materialized any</p>
+                </div> <!-- .project-caption -->
+            </div> <!-- .project -->
+
+
+        </div> <!-- .main -->
+
+        <div class="col-md-1">&nbsp;</div>
+    </div> <!-- row -->
+</div> <!-- .container -->
+<footer class="footer">
+    &copy; Copyright 2019 Maria Rabin
+</footer>
 
 </body>
 
